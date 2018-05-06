@@ -1,6 +1,7 @@
 function produceDrivingRange(blockRange){
   return function(startRange, endRange){
-    if (endRange - startRange > blockRange){
+    let requestRangerange = endRange - startRange;
+    if (requestRange > blockRange){
       return `${endRange - startRange} blocks out of range`;
     } else {
       return `within range by ${endRange - startRange}`;
